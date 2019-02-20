@@ -20,7 +20,6 @@
  <script>
  	hideTRIcons();
     hideSmartClaims();
-    hideBusinessExpense();
  </script>
 
 <body style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
@@ -135,11 +134,9 @@
             <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-
             <div data-p="225.00">
                 <img data-u="image" src="img/red.png" />
             </div>
-
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb05" style="bottom:5px;right:5px;" data-autocenter="1">
@@ -152,22 +149,22 @@
     </div>
     <div class="col-md-6 accordions">
          <section class="ac-container">
-               <div id="businessExpenseTab">
+               <div>
 				<label lang="en"onclick="createBusiExpMain();">Business Expense</label>
 				</div>
 				<div id="CategoryTrRoleID">
-				<label  lang="en" onclick="createTravelMain();" style="background: #8fae51 url(images/ar-n.png) no-repeat right;" for="ac-2">Travel Management</label>
+				<label  lang="en" onclick="createTravelMain();" style="background-color: #8fae51" for="ac-2">Travel Management</label>
                 </div>
 				<div>
-               <label lang="en" onclick="createWallet();" style="background: #8775a7 url(images/ar-n.png) no-repeat right;" for="ac-2">My Receipts Wallet</label>
+               <label lang="en" onclick="createWallet();" style="background-color: #8775a7" for="ac-2">My Receipts Wallet</label>
 				</div>
              <div id="smartClaimsID">
-               <label lang="en" onclick="viewMessages();" style="background: #b75353 url(images/ar-n.png) no-repeat right;" for="ac-2">Smart Expenses</label>
+               <label lang="en" onclick="viewMessages();" style="background-color: #b75353" for="ac-2">Smart Expenses</label>
                 </div>
+                <p class="helpiconbtm text-center" style="color: #19CFEF; font: caption;"><b lang="en" onclick="showHelpMenu()">Help</b></p>
          </section>
     </div>
-<br>
     <!-- #endregion Jssor Slider End -->
-   <!--  <center><a><p style="color: #19CFEF;font: caption;"> <b lang="en" onclick="showHelpMenu()">Help</b></p></a></center>-->
+    
 </body>
 

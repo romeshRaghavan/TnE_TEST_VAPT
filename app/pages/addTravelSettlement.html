@@ -69,9 +69,12 @@
 		onloadTravelSettleData();
 
      j("#travelRequestName").change(function() {
+    //alert("in change")
+      //resetDatepicker();
       getExpenseNamesOnRequestNoChange();
       getStartandEndOnRequestNoChange();
 	  getCurrencyOnRequestNoChange();
+    alert("in change down")
     });
 		
       j("#travelExpenseName").change(function() {
@@ -80,6 +83,17 @@
      j("#travelMode").change(function() {
       getCatergoryBasedOnMode();
   });
+
+
+/*function resetDatepicker(){
+   alert("in reset");
+
+     $('#expDate').val("");
+      //$('#expDate').date(datepicker).setDate(null);
+      //document.getElementById('expDate').value="";
+      //$('#expDate').datepicker().val("");
+  }*/
+
   function validate()
   {
 	var field = document.getElementById("expAmt");
@@ -90,4 +104,6 @@
 		return false;
 	}
   }
+
+
 	  </script> 
