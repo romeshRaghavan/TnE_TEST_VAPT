@@ -7,6 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 html, body{
    font-family: 'Lato-Regular';
     font-size: 100%;
+    background-color: #000;
 }
 body a{
 	transition:0.5s all;
@@ -498,14 +499,14 @@ span.email {
 /*-- start tabs --*/
 .deals {
     background-color: #fff;
-	    border-bottom-left-radius: 0.3em;
+	  /*  border-bottom-left-radius: 0.3em;
     -o-border-bottom-left-radius: 0.3em;
     -moz-border-bottom-left-radius: 0.3em;
     -webkit-border-bottom-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     -o-border-bottom-right-radius: 0.3em;
     -moz-border-bottom-right-radius: 0.3em;
-    -webkit-border-bottom-right-radius: 0.3em;
+    -webkit-border-bottom-right-radius: 0.3em;*/
 }
 .resp-tabs-list,.resp-tabs-list1 {
 	width: 100%;
@@ -1037,27 +1038,27 @@ li.com a:hover{
   background-color: #009e5d;
 }
 .ac-container{
-    margin: 10px auto 28px auto;
+    margin: 0 auto;
     text-align: left;
-    width: 99%
+    width: 100%;
+    padding-bottom: 40px;
 }
 
 .ac-container label{
-    padding: 12px 6px;
+    padding: 10px;
     position: relative;
     z-index: 20;
     display: block;
-    height: 84px;
     cursor: pointer;
     color: #fff;
-    line-height: 54px;
+    line-height: 80px;
     font-size: 25px;
-    /* background: #0675a2; */
-    border: 1px solid rgba(221, 221, 221, 0.8);
     font-weight: 400;
-    background: #0675a2 url(../images/ar-n.png) no-repeat right ;
-    border-radius: 10px;
-    
+    background-color:#0675a2;
+    background-image: url(../images/ar-n.png) !important;
+    border-radius: 0;
+    background-repeat: no-repeat !important;
+    background-position: 96% center !important;
 }
 .ac-containermarker{
     position: absolute;
@@ -1077,7 +1078,7 @@ li.com a:hover{
     color: #fff;
     border: 1px solid #34495e;
 }
-.ac-container label:hover:after,
+/*.ac-container label:hover:after,
 .ac-container input:checked + label:hover:after{
 	content: '';
 	position: absolute;
@@ -1085,11 +1086,11 @@ li.com a:hover{
 	height: 24px;
 	right: 0px;
 	top: 28px;
-	background: transparent url(../images/ar-n.png) no-repeat center center;	
+	background: transparent url(../images/ar-n.png) no-repeat 96% center;	
 }
 .ac-container input:checked + label:hover:after{
 	background-image: url(../images/arrow_up.png);
-}
+}*/
 .ac-container input{
 	display: none;
 }
@@ -2981,7 +2982,7 @@ a.hvr-hollow:hover,a.hvr-hollow:focus,a.hvr-hollow:active {
 	}
 	.resp-tab-item {
 		font-size: 13px;
-		width: 33.329%;
+		width: 25%;
 		padding: 17px 0px;
 	}
 	a.hvr-bounce-to-bottom2 {
@@ -3069,7 +3070,7 @@ a.hvr-hollow:hover,a.hvr-hollow:focus,a.hvr-hollow:active {
 @media (max-width:384px){
 	.resp-tab-item {
 		font-size: 11px;
-		width: 33.329%;
+		width: 25%;
 		padding: 17px 0px;
 	}
 	.twitter {
@@ -3175,4 +3176,3 @@ a.hvr-hollow:hover,a.hvr-hollow:focus,a.hvr-hollow:active {
 		padding-top:0.9em;
 	}
 }
-#mySidenav a:last-child{display:none;}

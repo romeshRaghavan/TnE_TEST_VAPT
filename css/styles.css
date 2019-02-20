@@ -49,7 +49,9 @@
 	display: block;
 	font-weight: bold;
 	text-align: center;
-    padding-left: 5px
+    padding: 2px 0 0 6px;
+    width: 105px;
+    text-align: left;
 }
 .allexpebtn {
 	text-align:center;
@@ -77,6 +79,7 @@
 	list-style-type: none;
 	text-align:center;
 	margin-bottom:10px;
+	padding-left: 1%;
 }
 .expenseform input, .expenseform select, #myTabContent input, #myTabContent select {
 	width:98%;
@@ -111,12 +114,13 @@
 	height:80px;
 }
 .footer {
-	border-top: 1px solid #e5e5e5;
+	border-top: 1px solid #333;
 	color: #ffffff;
 	font-size: 13px;
 	font-weight: normal;
-	margin: 0 0 15px;
-	padding-top: 15px;
+	margin: 0;
+	padding: 5px 0;
+	clear: both;
 	text-align: center;
 }
 .addanexpense p {
@@ -195,8 +199,10 @@
 #mainContainer {
     float: left;
     overflow-x: hidden;
-    padding: 5% 0% 5%;
+    padding: 0;
     width: 100%;
+    margin-top: 0;
+    background-color: #000;
 }
 .selected {
 	background-color: #14A6C5 !important;
@@ -205,14 +211,15 @@
 	display: none;
 }
 .headerposition {
-    bottom: 6px;
+    bottom: 0;
     display: block;
     float: none;
-    left: 17%;
+    left: 60px;
     margin: 0 auto;
     padding: 0;
     position: absolute;
     text-align: center;
+    line-height: 40px;
 }
 #errorSpan {
 	font-size: 11px;
@@ -285,9 +292,9 @@
 	opacity: 0.9;
 }
 .backarrowbtn {
-    bottom: 6px;
+/*    bottom: 6px;
     left: 4px;
-    position: absolute;
+    position: absolute;*/
     text-align: left;
     z-index: 999;
     cursor: pointer;
@@ -383,17 +390,17 @@
   z-index: 100;
   max-width: 35%;
 }
-.expenzingImg{
+/*.expenzingImg{
     position: absolute;
     top: -2px;
     left: 63%;
     z-index: 100;
     max-width: 200%;
-}
-.expenzingMainImg{
+}*/
+.expenzingMainImg, .expenzingImg{
 	position: absolute;
-    top: 11px;
-    left: 4%;
+    top: 5px;
+    left: 20px;
     z-index: 100;
     max-width: 8%;
 }
@@ -610,30 +617,25 @@ transition:transform .3s ease-out;
 }
 
 .topfixednavigate {
-    background-color: #100101;
-    border-bottom: 1px solid #999999;
+    background-color: #000;
     color: #FFFFFF;
     height: 40px;
     left: 0;
     margin: 0 auto;
-    padding: 38px 3px 6px;
+    padding: 0;
     position: fixed;
     right: 0;
     top: 0;
     width: 100%;
     z-index: 99;
 }
-
-
 .main-wrapper {
 	background-image:url(../images/background-expense.jpg);
 	background-position: center;
 	background-repeat:no-repeat;
-	margin:5px auto;
+	margin:5px auto 0;
 	height:227px;
-
 }
-
 .startLoginPage {
 	font-size:20px;
 	color:#9BCC49;
@@ -642,14 +644,12 @@ transition:transform .3s ease-out;
 	font-weight:bold;
 	padding-bottom: 8px;
 }
-
 .softwarecontent {
 	font-size:21px;
 	color:#ffffff;
 	text-align:center;
 	margin-top:20px;
 }
-
 .softwarecontent b, .softwarecontent strong {
 	font-weight:normal;
 	color:#4ebbd2;
