@@ -67,7 +67,7 @@ function login()
 		data: JSON.stringify(jsonToBeSendEncrypted),
 		success: function(data) {
 			if (data.Status == 'Success'){
-
+				alert("in sucess")
 				if(data.hasOwnProperty('multiLangInMobile') && data.multiLangInMobile != null &&
 					data.multiLangInMobile){
 					var headerBackBtn=defaultPagePath+'withoutBckBtn.html';
