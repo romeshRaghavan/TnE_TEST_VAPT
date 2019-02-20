@@ -105,11 +105,3 @@ function isZero(object,messageContent){
 		return true;
 	}
 }
-
-function isNumber_optionalDot(object,messageContent) {
-		if(isNaN(Number(object))) {
-			alert(window.lang.translate(messageContent+" should be numeric."));
-			return false;
-		}
-		return true;
-}
