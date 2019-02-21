@@ -66,6 +66,7 @@ function login()
 		crossDomain: true,
 		data: JSON.stringify(jsonToBeSendEncrypted),
 		success: function(data) {
+			alert("above success");
 			if (data.Status == 'Success'){
 				alert("in sucess")
 				if(data.hasOwnProperty('multiLangInMobile') && data.multiLangInMobile != null &&
@@ -113,6 +114,7 @@ function login()
 			}
 			
 		}else if(data.Status == 'Failure'){
+			alert("in failure");
 			successMessage = data.Message;
 			if(successMessage.length == 0){
 				successMessage = "Wrong UserName or Password";
